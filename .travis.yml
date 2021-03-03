@@ -19,7 +19,7 @@ after_script: #最后执行的命令
   - git config user.email "980602488@qq.com"
   - git add .
   - git commit -m "自动部署"
-  - git push --force --quiet "https://${wenqian1234}@${GH_REF}" master:gh-pages  #想上传哪个分支
+  - git push --force --quiet "https://${0304press}@${GH_REF}" master:gh-pages  #想上传哪个分支
 
 branches:
   only:
@@ -27,4 +27,4 @@ branches:
 
 env:
   global:
-    - GH_REF: github.com/wenqian1234/wenqian1234.github.io.git  #就是github上存放静态文件上.git
+    - GH_REF: github.com/wenqian1234/0304vuepress.git  #就是github上存放静态文件上.git
